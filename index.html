@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaReader - Leia Mangás Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MangaReader</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#popular">Populares</a></li>
+                    <li><a href="#recent">Recentes</a></li>
+                    <li><a href="#genres">Gêneros</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar mangá...">
+                <button id="searchBtn">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao MangaReader</h2>
+            <p>Leia seus mangás favoritos gratuitamente</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="popular" class="manga-section">
+            <h2>Mangás Populares</h2>
+            <div class="manga-grid" id="popularMangas">
+                <!-- Mangás serão inseridos via JavaScript -->
+            </div>
+        </section>
+
+        <section id="recent" class="manga-section">
+            <h2>Atualizações Recentes</h2>
+            <div class="manga-grid" id="recentMangas">
+                <!-- Mangás serão inseridos via JavaScript -->
+            </div>
+        </section>
+
+        <section id="genres" class="genres-section">
+            <h2>Gêneros</h2>
+            <div class="genre-tags">
+                <button class="genre-tag" data-genre="acao">Ação</button>
+                <button class="genre-tag" data-genre="aventura">Aventura</button>
+                <button class="genre-tag" data-genre="comedia">Comédia</button>
+                <button class="genre-tag" data-genre="drama">Drama</button>
+                <button class="genre-tag" data-genre="fantasia">Fantasia</button>
+                <button class="genre-tag" data-genre="romance">Romance</button>
+                <button class="genre-tag" data-genre="sobrenatural">Sobrenatural</button>
+                <button class="genre-tag" data-genre="slice-of-life">Slice of Life</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="mangaModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalCover" src="" alt="Capa do Mangá">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-genres" id="modalGenres"></p>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <div class="modal-stats">
+                        <span id="modalRating"></span>
+                        <span id="modalChapters"></span>
+                        <span id="modalStatus"></span>
+                    </div>
+                    <button class="read-btn">Começar a Ler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MangaReader. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#about">Sobre</a>
+                <a href="#contact">Contato</a>
+                <a href="#terms">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
